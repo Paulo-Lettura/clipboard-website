@@ -1,0 +1,145 @@
+@font-face {
+  font-family: "BaiJam";
+  src: url("/cohort-9-resources/clipboard-website/Bai_Jamjuree/BaiJamjuree-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BaiJam";
+  src: url("/cohort-9-resources/clipboard-website/Bai_Jamjuree/BaiJamjuree-Italic.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "BaiJam";
+  src: url("/cohort-9-resources/clipboard-website/Bai_Jamjuree/BaiJamjuree-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+:root {
+  /* use this for css variables eg for the green */
+  --x_green: #26bba4;
+  --x_blue: #6174ff;
+  --text: #9eabb2;
+}
+
+body {
+  background: url("assets/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: cover;
+  /* what about contain? */
+  font-family: "BaiJam, Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-style: italic;
+  color: var(--text);
+  text-align: center;
+  padding: 0;
+  margin: 30px;
+}
+
+header h1 {
+  background-image: url("assets/logo.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 125px;
+  height: 0;
+  overflow: hidden;
+  margin: 200px, 0;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1em 0;
+  color: black;
+}
+
+p {
+  line-height: 1.75;
+  margin: 1em 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--x_blue);
+}
+
+/* img {
+  max-width: ;
+} */
+
+.download_buttons {
+  display: block;
+  color: aliceblue;
+}
+
+.download_buttons a {
+  display: block;
+  /* so they are displayed on tehir own line */
+}
+
+.download_buttons a:hover {
+  display: block;
+  color: aliceblue;
+  font-weight: bold;
+  /* so they are displayed on tehir own line */
+}
+
+.download_buttons a.ios {
+  background-color: var(--x_green);
+  /* better to do this rather than hard code the color */
+  text-align: center;
+  padding: 1em 1.5em;
+  font-style: italic;
+  border-radius: 28px;
+  margin: 1.5em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.download_buttons a.android {
+  background-color: var(--x_blue);
+  text-align: center;
+  padding: 1em 1.5em;
+  font-style: italic;
+  border-radius: 28px;
+  margin: 1em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+section {
+  margin: 165px, 0;
+  /* why not working? */
+}
+
+.keep_track {
+  display: block;
+  margin: 60px;
+}
+
+.keep_track ul {
+  list-style: none;
+  padding: 0;
+}
