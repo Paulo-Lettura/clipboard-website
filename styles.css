@@ -20,21 +20,21 @@
 }
 
 :root {
-  /* use this for css variables eg for the green */
   --x_green: #26bba4;
   --x_blue: #6174ff;
+  --button-text: #ffffff;
   --text: #9eabb2;
+  --footer-text: #4c545c;
+  --footer-background: #9eabb2;
 }
 
 body {
   background: url("assets/bg-header-mobile.png");
   background-repeat: no-repeat;
   background-color: white;
-  background-size: cover;
-  /* what about contain? */
+  background-size: contain;
   font-family: "BaiJam, Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  font-style: italic;
   color: var(--text);
   text-align: center;
   padding: 0;
@@ -45,21 +45,25 @@ header h1 {
   background-image: url("assets/logo.svg");
   background-repeat: no-repeat;
   background-position: center center;
+  margin: 200px, 0;
+  /* what are next 3 lines for? */
   padding-top: 125px;
   height: 0;
   overflow: hidden;
-  margin: 200px, 0;
 }
 
 h2 {
+  font-style: italic;
   font-size: 32px;
 }
 
 h3 {
+  font-style: italic;
   font-size: 28px;
 }
 
 h4 {
+  font-style: italic;
   font-size: 24px;
 }
 
@@ -87,30 +91,23 @@ a:hover {
   color: var(--x_blue);
 }
 
-/* img {
-  max-width: ;
-} */
-
 .download_buttons {
   display: block;
-  color: aliceblue;
+  color: var(--button-text);
 }
 
 .download_buttons a {
   display: block;
-  /* so they are displayed on tehir own line */
 }
 
 .download_buttons a:hover {
   display: block;
-  color: aliceblue;
+  color: var(--button-text);
   font-weight: bold;
-  /* so they are displayed on tehir own line */
 }
 
 .download_buttons a.ios {
   background-color: var(--x_green);
-  /* better to do this rather than hard code the color */
   text-align: center;
   padding: 1em 1.5em;
   font-style: italic;
@@ -142,4 +139,78 @@ section {
 .keep_track ul {
   list-style: none;
   padding: 0;
+}
+
+ul.features {
+  list-style: none;
+  padding: 0;
+}
+
+.features .blacklist h4::before {
+  display: block;
+  background: url("assets/icon-blacklist.svg");
+  margin: 20px auto;
+  width: 44px;
+  height: 40px;
+  content: "";
+}
+
+.features .plain-text h4::before {
+  display: block;
+  background: url("assets/icon-text.svg");
+  margin: 20px auto;
+  width: 35px;
+  height: 32px;
+  content: "";
+}
+
+.features .sneak h4::before {
+  display: block;
+  background: url("assets/icon-preview.svg");
+  /* 2 lines below don't work */
+  /* background-position: center center;
+  background-repeat: no-repeat; */
+  margin: 20px auto;
+  width: 50px;
+  height: 32px;
+  content: "";
+}
+
+.partner-logos {
+  display: grid;
+  grid-template-columns: 140px;
+  grid-template-rows: repeat(5, 110px);
+  margin-top: 150px;
+  margin-bottom: 150px;
+  justify-content: center;
+  justify-items: center;
+}
+
+footer {
+  margin: auto;
+  background-color: var(--footer-background);
+}
+
+footer img {
+  /* margin: 220px auto auto 50px; */
+  margin-top: 220px;
+  margin-bottom: 50px;
+  width: 30px;
+  height: 30px;
+}
+
+footer nav a {
+  display: block;
+  text-align: center;
+  line-height: 30pt;
+  color: var(--footer-text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18pt;
+}
+
+footer address a {
+  display: inline-block;
+  text-align: center;
+  margin-left: 22px;
+  margin-right: 22px;
 }
