@@ -13,4 +13,5 @@ The spacing doesn't look right in the footer and the fonts logo size on the foot
 
 And the grey looks too dark but I did use the right #.  And I just don't know how to get rid of the left/right gutters.
 Not sure how to control the gap between footer nav and social icons.  I thought it would be margin-bottom.
-More to follow....
+
+TUESDAY 15:50.  I have added the desktop site (2 files desktop*.html, css).  I'm afraid they are very terrible and I have more quetsions than answers...
